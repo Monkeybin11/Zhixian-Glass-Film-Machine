@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chs_APPNAME" xml:space="preserve">
+    <value>贴膜定位检测视觉系统</value>
+  </data>
+  <data name="chs_BBI_APPINFO" xml:space="preserve">
+    <value>软件信息</value>
+  </data>
+  <data name="chs_BBI_EXITSYSTEM" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="chs_BBI_LOADROUTINE" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="chs_BBI_LOGIN" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="chs_BBI_LOGOUT" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="chs_BBI_MANAGEACCOUNT" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="chs_BBI_MANAGEROUTINE" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="chs_BBI_NEWROUTINE" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="chs_BBI_RUNCONTINUE" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="chs_BBI_RUNONCE" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="chs_BBI_RUNSTOP" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="chs_BBI_SETMOTION" xml:space="preserve">
+    <value>运控</value>
+  </data>
+  <data name="chs_BBI_SETROUTINE" xml:space="preserve">
+    <value>程式</value>
+  </data>
+  <data name="chs_BBI_SETSYSTEM" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="chs_BBI_VENDORINFO" xml:space="preserve">
+    <value>厂商信息</value>
+  </data>
+  <data name="chs_BEI_CURRENTROUTINE" xml:space="preserve">
+    <value>当前程式</value>
+  </data>
+  <data name="chs_BSBI_ABOUT" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="chs_BSBI_ACCOUNT" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="chs_BSBI_BOARDSTATUS" xml:space="preserve">
+    <value>板卡状态</value>
+  </data>
+  <data name="chs_BSBI_CAMERASTATUS" xml:space="preserve">
+    <value>相机状态</value>
+  </data>
+  <data name="chs_BSBI_ROUTINE" xml:space="preserve">
+    <value>程式</value>
+  </data>
+  <data name="chs_BSBI_SERIALPORTSTATUS" xml:space="preserve">
+    <value>串口状态</value>
+  </data>
+  <data name="chs_BSBI_SET" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="chs_BSTI_CLIENTNAME" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="chs_BSTI_CURRENTACCOUNT" xml:space="preserve">
+    <value>当前账户:</value>
+  </data>
+  <data name="chs_BSTI_CURRENTTIME" xml:space="preserve">
+    <value>当前时间:</value>
+  </data>
+  <data name="chs_FRM_NEWROUTINE" xml:space="preserve">
+    <value>新建程式对话框</value>
+  </data>
+  <data name="chs_FRM_ROUTINEMANAGER" xml:space="preserve">
+    <value>程式管理对话框</value>
+  </data>
+  <data name="chs_FRM_SETROUTINEPARA" xml:space="preserve">
+    <value>设置程式参数</value>
+  </data>
+  <data name="chs_LBLC_ELAPSETIME" xml:space="preserve">
+    <value>耗时:</value>
+  </data>
+  <data name="chs_LBLC_PROMPTNEWROUTINENAME" xml:space="preserve">
+    <value>请输入新程式的名称：</value>
+  </data>
+  <data name="chs_LBLC_PRONG" xml:space="preserve">
+    <value>次品:</value>
+  </data>
+  <data name="chs_LBLC_PROOK" xml:space="preserve">
+    <value>良品:</value>
+  </data>
+  <data name="chs_LBLC_PROYIELDRATIO" xml:space="preserve">
+    <value>良率:</value>
+  </data>
+  <data name="chs_LBLC_RUNSTATE" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="chs_LBLC_SEARCHBYNAMES" xml:space="preserve">
+    <value>按名称搜索:</value>
+  </data>
+  <data name="chs_OFFLINE" xml:space="preserve">
+    <value>离线</value>
+  </data>
+  <data name="chs_ONLINE" xml:space="preserve">
+    <value>在线</value>
+  </data>
+  <data name="chs_SBTN_CANCEL" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="chs_SBTN_CLEARROUTINE" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="chs_SBTN_CONFIRM" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="chs_SBTN_COUNTCLEAR" xml:space="preserve">
+    <value>清零</value>
+  </data>
+  <data name="chs_SBTN_DELETEROUTINE" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_SBTN_EDITROUTINE" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="chs_SBTN_EXIT" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="chs_SBTN_LOADROUTINE" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="chs_SBTN_NEWROUTINE" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="chs_SBTN_SEARCH" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="chs_VENDORINFO" xml:space="preserve">
+    <value>深圳市汇众智慧科技有限公司</value>
+  </data>
+  <data name="en_APPNAME" xml:space="preserve">
+    <value>Laminator Inspection Vision System</value>
+  </data>
+  <data name="en_BBI_APPINFO" xml:space="preserve">
+    <value>App Info</value>
+  </data>
+  <data name="en_BBI_EXITSYSTEM" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="en_BBI_LOADROUTINE" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="en_BBI_LOGIN" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="en_BBI_LOGOUT" xml:space="preserve">
+    <value>LogOut</value>
+  </data>
+  <data name="en_BBI_MANAGEACCOUNT" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="en_BBI_MANAGEROUTINE" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="en_BBI_NEWROUTINE" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="en_BBI_RUNCONTINUE" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="en_BBI_RUNONCE" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="en_BBI_RUNSTOP" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="en_BBI_SETMOTION" xml:space="preserve">
+    <value>Motion</value>
+  </data>
+  <data name="en_BBI_SETROUTINE" xml:space="preserve">
+    <value>Routine</value>
+  </data>
+  <data name="en_BBI_SETSYSTEM" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="en_BBI_VENDORINFO" xml:space="preserve">
+    <value>Vendor Info</value>
+  </data>
+  <data name="en_BEI_CURRENTROUTINE" xml:space="preserve">
+    <value>CurrentRoutine</value>
+  </data>
+  <data name="en_BSBI_ABOUT" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="en_BSBI_ACCOUNT" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="en_BSBI_BOARDSTATUS" xml:space="preserve">
+    <value>BoardStatus</value>
+  </data>
+  <data name="en_BSBI_CAMERASTATUS" xml:space="preserve">
+    <value>CameraStatus</value>
+  </data>
+  <data name="en_BSBI_ROUTINE" xml:space="preserve">
+    <value>Routine</value>
+  </data>
+  <data name="en_BSBI_SERIALPORTSTATUS" xml:space="preserve">
+    <value>SerialPortStatus</value>
+  </data>
+  <data name="en_BSBI_SET" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="en_BSTI_CLIENTNAME" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="en_BSTI_CURRENTACCOUNT" xml:space="preserve">
+    <value>CurrentAccount:</value>
+  </data>
+  <data name="en_BSTI_CURRENTTIME" xml:space="preserve">
+    <value>CurrentTime:</value>
+  </data>
+  <data name="en_FRM_NEWROUTINE" xml:space="preserve">
+    <value>Dialog for new routine</value>
+  </data>
+  <data name="en_FRM_ROUTINEMANAGER" xml:space="preserve">
+    <value>Dialog for routine manager</value>
+  </data>
+  <data name="en_FRM_SETROUTINEPARA" xml:space="preserve">
+    <value>Set routine parameter</value>
+  </data>
+  <data name="en_LBLC_ELAPSETIME" xml:space="preserve">
+    <value>ElpsT:</value>
+  </data>
+  <data name="en_LBLC_PROMPTNEWROUTINENAME" xml:space="preserve">
+    <value>Enter new routine name:</value>
+  </data>
+  <data name="en_LBLC_PRONG" xml:space="preserve">
+    <value>ProNG:</value>
+  </data>
+  <data name="en_LBLC_PROOK" xml:space="preserve">
+    <value>ProOK:</value>
+  </data>
+  <data name="en_LBLC_PROYIELDRATIO" xml:space="preserve">
+    <value>YldRto:</value>
+  </data>
+  <data name="en_LBLC_RUNSTATE" xml:space="preserve">
+    <value>STOP</value>
+  </data>
+  <data name="en_LBLC_SEARCHBYNAMES" xml:space="preserve">
+    <value>Search by name:</value>
+  </data>
+  <data name="en_OFFLINE" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="en_ONLINE" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="en_SBTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="en_SBTN_CLEARROUTINE" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="en_SBTN_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="en_SBTN_COUNTCLEAR" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="en_SBTN_DELETEROUTINE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_SBTN_EDITROUTINE" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="en_SBTN_EXIT" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="en_SBTN_LOADROUTINE" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="en_SBTN_NEWROUTINE" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="en_SBTN_SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="en_VENDORINFO" xml:space="preserve">
+    <value>hzzh-kj Co.,Ltd</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="halcondotnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\halcondotnet.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

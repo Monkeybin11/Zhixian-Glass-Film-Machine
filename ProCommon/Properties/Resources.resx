@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chs_BBI_ANNULUS" xml:space="preserve">
+    <value>闭合圆环</value>
+  </data>
+  <data name="chs_BBI_CIRCLE" xml:space="preserve">
+    <value>闭合圆形</value>
+  </data>
+  <data name="chs_BBI_CIRCULARARC" xml:space="preserve">
+    <value>有向圆弧</value>
+  </data>
+  <data name="chs_BBI_CLEARICONIC" xml:space="preserve">
+    <value>清空图形</value>
+  </data>
+  <data name="chs_BBI_DELETEACTIVEROI" xml:space="preserve">
+    <value>删除活动ROI</value>
+  </data>
+  <data name="chs_BBI_DELETEALLROI" xml:space="preserve">
+    <value>删除所有ROI</value>
+  </data>
+  <data name="chs_BBI_LINE" xml:space="preserve">
+    <value>矢量线段</value>
+  </data>
+  <data name="chs_BBI_LOADIMAGE" xml:space="preserve">
+    <value>加载图像</value>
+  </data>
+  <data name="chs_BBI_RECTANGLE1" xml:space="preserve">
+    <value>齐轴矩形</value>
+  </data>
+  <data name="chs_BBI_RECTANGLE2" xml:space="preserve">
+    <value>仿射矩形</value>
+  </data>
+  <data name="chs_BBI_RESETWINDOW" xml:space="preserve">
+    <value>重置窗体</value>
+  </data>
+  <data name="chs_BBI_UPDATEREGION" xml:space="preserve">
+    <value>更新区域</value>
+  </data>
+  <data name="chs_BCHKI_MAGNIFY" xml:space="preserve">
+    <value>局部放大</value>
+  </data>
+  <data name="chs_BCHKI_MODIFYREGION" xml:space="preserve">
+    <value>修改区域</value>
+  </data>
+  <data name="chs_BCHKI_MOVE" xml:space="preserve">
+    <value>移动图形</value>
+  </data>
+  <data name="chs_BCHKI_NONE" xml:space="preserve">
+    <value>无操作</value>
+  </data>
+  <data name="chs_BCHKI_ZOOM" xml:space="preserve">
+    <value>缩放图形</value>
+  </data>
+  <data name="chs_FRM_DEFINEANDMODIFYREGION" xml:space="preserve">
+    <value>定义与修改区域窗口</value>
+  </data>
+  <data name="chs_FRM_LOGIN" xml:space="preserve">
+    <value>账户登录对话框</value>
+  </data>
+  <data name="chs_FRM_MANAGEACCOUNT" xml:space="preserve">
+    <value>账户管理对话框</value>
+  </data>
+  <data name="chs_GRPC_ACCOUNTDETAIL" xml:space="preserve">
+    <value>账户详情</value>
+  </data>
+  <data name="chs_GRPC_ACCOUNTPROMPT" xml:space="preserve">
+    <value>账户信息</value>
+  </data>
+  <data name="chs_GRPC_OPERATIONOPTION" xml:space="preserve">
+    <value>操作选项</value>
+  </data>
+  <data name="chs_GRPC_OPERATIONPROMPT" xml:space="preserve">
+    <value>操作提示</value>
+  </data>
+  <data name="chs_LBLC_ACCOUNTAUTHORITY" xml:space="preserve">
+    <value>权限:</value>
+  </data>
+  <data name="chs_LBLC_ACCOUNTLIST" xml:space="preserve">
+    <value>列表:</value>
+  </data>
+  <data name="chs_LBLC_ACCOUNTNAME" xml:space="preserve">
+    <value>名称:</value>
+  </data>
+  <data name="chs_LBLC_ACCOUNTPASSWORD" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="chs_LBLC_ACCOUNTSELECTION" xml:space="preserve">
+    <value>账户:</value>
+  </data>
+  <data name="chs_LBLC_ERRORPROMPT" xml:space="preserve">
+    <value>异常提示</value>
+  </data>
+  <data name="chs_LBLC_PASSWORD" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="chs_RBTN_ADD" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="chs_RBTN_DELETE" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_RBTN_MODIFY" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="chs_SBTN_CANCEL" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="chs_SBTN_CONFIRM" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="chs_SBTN_LOGIN" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="chs_XTABP_GENERALAUTHORITY" xml:space="preserve">
+    <value>一般权限</value>
+  </data>
+  <data name="chs_XTABP_MANAGERAUTHORITY" xml:space="preserve">
+    <value>管理员权限</value>
+  </data>
+  <data name="en_BBI_ANNULUS" xml:space="preserve">
+    <value>Annulus</value>
+  </data>
+  <data name="en_BBI_CIRCLE" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="en_BBI_CIRCULARARC" xml:space="preserve">
+    <value>CircularArc</value>
+  </data>
+  <data name="en_BBI_CLEARICONIC" xml:space="preserve">
+    <value>Clear Iconic</value>
+  </data>
+  <data name="en_BBI_DELETEACTIVEROI" xml:space="preserve">
+    <value>DeleteActive</value>
+  </data>
+  <data name="en_BBI_DELETEALLROI" xml:space="preserve">
+    <value>DeleteAll</value>
+  </data>
+  <data name="en_BBI_LINE" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="en_BBI_LOADIMAGE" xml:space="preserve">
+    <value>Load Image</value>
+  </data>
+  <data name="en_BBI_RECTANGLE1" xml:space="preserve">
+    <value>Rectangle1</value>
+  </data>
+  <data name="en_BBI_RECTANGLE2" xml:space="preserve">
+    <value>Rectangle2</value>
+  </data>
+  <data name="en_BBI_RESETWINDOW" xml:space="preserve">
+    <value>ResetWindow</value>
+  </data>
+  <data name="en_BBI_UPDATEREGION" xml:space="preserve">
+    <value>Update Region</value>
+  </data>
+  <data name="en_BCHKI_MAGNIFY" xml:space="preserve">
+    <value>Magnify</value>
+  </data>
+  <data name="en_BCHKI_MODIFYREGION" xml:space="preserve">
+    <value>Modify Region</value>
+  </data>
+  <data name="en_BCHKI_MOVE" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="en_BCHKI_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="en_BCHKI_ZOOM" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="en_FRM_DEFINEANDMODIFYREGION" xml:space="preserve">
+    <value>Define and modify region</value>
+  </data>
+  <data name="en_FRM_LOGIN" xml:space="preserve">
+    <value>Dialog for login</value>
+  </data>
+  <data name="en_FRM_MANAGEACCOUNT" xml:space="preserve">
+    <value>Dialog for account managing </value>
+  </data>
+  <data name="en_GRPC_ACCOUNTDETAIL" xml:space="preserve">
+    <value>Account Detail</value>
+  </data>
+  <data name="en_GRPC_ACCOUNTPROMPT" xml:space="preserve">
+    <value>AccPrompt</value>
+  </data>
+  <data name="en_GRPC_OPERATIONOPTION" xml:space="preserve">
+    <value>OperationOption</value>
+  </data>
+  <data name="en_GRPC_OPERATIONPROMPT" xml:space="preserve">
+    <value>OperationPrompt</value>
+  </data>
+  <data name="en_LBLC_ACCOUNTAUTHORITY" xml:space="preserve">
+    <value>Authority:</value>
+  </data>
+  <data name="en_LBLC_ACCOUNTLIST" xml:space="preserve">
+    <value>List:</value>
+  </data>
+  <data name="en_LBLC_ACCOUNTNAME" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="en_LBLC_ACCOUNTPASSWORD" xml:space="preserve">
+    <value>PassWorld:</value>
+  </data>
+  <data name="en_LBLC_ACCOUNTSELECTION" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="en_LBLC_ERRORPROMPT" xml:space="preserve">
+    <value>ErrorPrompt</value>
+  </data>
+  <data name="en_LBLC_PASSWORD" xml:space="preserve">
+    <value>PassWord:</value>
+  </data>
+  <data name="en_RBTN_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_RBTN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_RBTN_MODIFY" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="en_SBTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="en_SBTN_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="en_SBTN_LOGIN" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="en_XTABP_GENERALAUTHORITY" xml:space="preserve">
+    <value>General Authority</value>
+  </data>
+  <data name="en_XTABP_MANAGERAUTHORITY" xml:space="preserve">
+    <value>Manager Authority</value>
+  </data>
+</root>

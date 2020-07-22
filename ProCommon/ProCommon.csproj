@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{325E2254-F01D-40F4-BFC1-CA1E1CAA313D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProCommon</RootNamespace>
+    <AssemblyName>ProCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.BonusSkins.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Images.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Office.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Pdf.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.RichEdit.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Sparkline.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraLayout.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>SolutionReSource\DllForImageProcess\Halcon\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus">
+      <HintPath>SolutionReSource\DllForCommunication\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communal\AccountDefinition.cs" />
+    <Compile Include="Communal\AutoLaunch.cs" />
+    <Compile Include="Communal\CfgAPI.cs" />
+    <Compile Include="Communal\Config.cs" />
+    <Compile Include="Communal\DESEncrypt.cs" />
+    <Compile Include="Communal\LanguageDefinition.cs" />
+    <Compile Include="Communal\DeviceDefinition.cs" />
+    <Compile Include="Communal\ExceptionDefinition.cs" />
+    <Compile Include="Communal\LogWriter.cs" />
+    <Compile Include="Communal\MotionDefinition.cs" />
+    <Compile Include="Communal\Serialization.cs" />
+    <Compile Include="Communal\ToolFunctions.cs" />
+    <Compile Include="DerivedForm\FrmAccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivedForm\FrmAccountManager.designer.cs">
+      <DependentUpon>FrmAccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DerivedForm\FrmCheckProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivedForm\FrmCheckProgress.designer.cs">
+      <DependentUpon>FrmCheckProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DerivedForm\FrmDefineAndModifyRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivedForm\FrmDefineAndModifyRegion.Designer.cs">
+      <DependentUpon>FrmDefineAndModifyRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DerivedForm\FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivedForm\FrmLogIn.designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DerivedForm\FrmMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivedForm\FrmMsgBox.Designer.cs">
+      <DependentUpon>FrmMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TempModbusRTU\CoilStatus.cs" />
+    <Compile Include="TempModbusRTU\InputStatus.cs" />
+    <Compile Include="TempModbusRTU\NumberData.cs" />
+    <Compile Include="TempModbusRTU\PLCDevice.cs" />
+    <Compile Include="TempModbusRTU\Registers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DerivedControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProVision\ProVision.csproj">
+      <Project>{f2049b64-92ae-48e8-9f6a-ba9e1cc67a37}</Project>
+      <Name>ProVision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DerivedForm\FrmAccountManager.resx">
+      <DependentUpon>FrmAccountManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DerivedForm\FrmCheckProgress.resx">
+      <DependentUpon>FrmCheckProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DerivedForm\FrmDefineAndModifyRegion.resx">
+      <DependentUpon>FrmDefineAndModifyRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DerivedForm\FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DerivedForm\FrmMsgBox.resx">
+      <DependentUpon>FrmMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
