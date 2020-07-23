@@ -492,15 +492,14 @@ namespace ProLaminator.UI.DerivedControl
                             this.sbtnStopAcquire.Enabled = true;
                             this.sbtnAcquireOnce.Enabled = true;
                             this.sbtnTestOffline.Enabled = true;
-                            this.sbtnNextImage.Enabled = true;
-
+                            this.sbtnNextImage.Enabled = true;                           
                         }
                         else
                         {
                             _warningText = isChs ? "无法操作!\r\n相机操作句柄异常!" : "Denied!\r\n Error occured on camera handle .";
                             ProCommon.DerivedForm.FrmMsgBox.Show(_warningText, _warningCaption,
                                ProCommon.DerivedForm.MyButtons.OK, ProCommon.DerivedForm.MyIcon.Warning, isChs);
-                        }
+                        }                      
                         break;
                     case "SBTN_LOADIMAGE":
                         {
@@ -628,6 +627,8 @@ namespace ProLaminator.UI.DerivedControl
                         }
                         break;
                     case "SBTN_TESTOFFLINE":
+                        { 
+                        }
                         break;
                     case "SBTN_NEXTIMAGE":
                         {

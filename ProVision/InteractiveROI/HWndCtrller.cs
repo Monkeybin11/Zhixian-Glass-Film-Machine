@@ -56,6 +56,8 @@ namespace ProVision.InteractiveROI
         /// <summary> Instance of ROIController, which manages ROI interaction </summary>
         private InteractiveROI.ROIManager _ROICtrller;
 
+        private System.Collections.Generic.List<ProVision.Communal.MessageLine> _msgLineList;
+
         private HalconDotNet.HWindow _zoomWindow;  //局部放大窗口
         public double ZoomAddOn
         {
@@ -213,6 +215,10 @@ namespace ProVision.InteractiveROI
             _hObjEntityList = new System.Collections.ArrayList(20);
             _grpCntx = new GraphicContext();
             _grpCntx.NotifyGraphicContext = new GraphicContextDelegate(ExceptionGC);
+
+            _msgLineList = new System.Collections.Generic.List<Communal.MessageLine>();
+            _defaultRowlEdge = 10;
+            _rowlEdge = new HalconDotNet.HTuple();
 
             /*GUI绘制窗口用参数的初始值*/
             _compRangeX = new int[] { 0, 100 };
@@ -561,9 +567,29 @@ namespace ProVision.InteractiveROI
 
                 NotifyInfoObserver();
 
+                //显示ROI
                 if ((_ROICtrller != null)
                     && (_ROIPaintMode == HWndCtrller.PAINT_MODE_INCLUDE_ROI))
                     _ROICtrller.PaintData(hwndHandle);
+
+                //显示信息条
+                if (_msgLineList != null)
+                {
+                    count = _msgLineList.Count;
+                    ProVision.Communal.MessageLine msgLine;
+                    for(int i=0;i<count;i++)
+                    {
+                        msgLine = _msgLineList[i];                       
+
+                        //设置显示文本:
+                        ProVision.Communal.Functions.SetDisplayFont(hwndHandle, msgLine.CtxSize, msgLine.CtxFont, msgLine.CtxBold,msgLine.CtxSlant);
+                       
+                        //显示文本
+                        ProVision.Communal.Functions.DispMessage(hwndHandle, msgLine.Context, 
+                            msgLine.CtxCoordinateSystem, msgLine.Row+RowlEdge*i, msgLine.Col, msgLine.CtxColor, new HalconDotNet.HTuple("false"));
+
+                    }
+                }
 
                 HalconDotNet.HSystem.SetSystem("flush_graphic", "true"); //更新图形变量
                 HalconDotNet.HOperatorSet.SetColor(hwndHandle, new HalconDotNet.HTuple("black"));
@@ -1070,9 +1096,71 @@ namespace ProVision.InteractiveROI
 
         #endregion
 
+        #region MessageLine
+        private HalconDotNet.HTuple _defaultRowlEdge;
+        private HalconDotNet.HTuple _rowlEdge;
+
+        /// <summary>
+        /// 信息条行距
+        /// </summary>
+        public HalconDotNet.HTuple RowlEdge
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _rowlEdge = value;
+            }
+            get
+            {
+                if (_rowlEdge.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _rowlEdge;
+                else
+                    return _defaultRowlEdge;
+            }
+        }
+
+        /// <summary>
+        /// 添加信息条记录
+        /// </summary>
+        /// <param name="msgLine"></param>
+        public void AddMessageLine(ProVision.Communal.MessageLine msgLine)
+        {
+            if (msgLine == null) return;
+
+            if(_msgLineList!=null)
+                _msgLineList.Add(msgLine);
+        }
+
+        /// <summary>
+        /// 信息条记录列表信息条数量
+        /// </summary>
+        /// <returns></returns>
+        public int GetMessageLineListCount()
+        {
+            int cnt = 0;
+
+            if (_msgLineList != null)
+                cnt = _msgLineList.Count;
+
+            return cnt;
+        }
+
+        /// <summary>
+        /// 清空信息条记录列表
+        /// </summary>
+        public void ClearMessageLineList()
+        {
+            if (_msgLineList != null)
+                _msgLineList.Clear();
+        }
+
+        #endregion
+
     }
 
     public delegate void InformationUpdatedDelegate();   //图形变量信息的相关委托
 
     public delegate void IconicUpdatedDelegate(int val); //图形变量任务相关的委托
+
+   
 }

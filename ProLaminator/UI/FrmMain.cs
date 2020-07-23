@@ -714,8 +714,10 @@ namespace ProLaminator.UI
                                         if (ProCommon.DerivedForm.FrmMsgBox.Show(txt1, caption,
                                             ProCommon.DerivedForm.MyButtons.YesNo, ProCommon.DerivedForm.MyIcon.Question, _IsChinese) == DialogResult.Yes)
                                         {
-                                            //用上次程式的参数作为初始参数进行创建
+                                            //使用上次程式的参数作为初始参数进行创建
                                             _cfgVisionPara = _cfgMgr.CfgVsPara;
+                                            _cfgVisionPara.RoutineName= _routineName;
+                                            _cfgVisionPara.RoutineDirectory = _routineDirectory;
                                         }
                                     }
                                 }

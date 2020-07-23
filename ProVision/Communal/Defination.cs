@@ -1730,4 +1730,209 @@ namespace ProVision.Communal
         //像素当量
         CALIBRATION_UNIT=4
     }
+
+    /// <summary>
+    /// 信息条记录
+    /// </summary>
+    public class MessageLine
+    {
+        public MessageLine()
+        {
+            _defaultRow = 10;
+            _defaultCol = 5;
+            _defaultCtxColor = "blue";
+            _defaultCtxBold = "false";
+            _defaultCtxSlant = "false";
+            _defaultCtxSize = 12;
+            _defaultCtxFont = "mono";
+            _defaultCtxCoordinateSystem = "image";
+
+            _row = new HalconDotNet.HTuple();
+            _col = new HalconDotNet.HTuple();
+            _ctxColor = new HalconDotNet.HTuple();
+            _ctxBold = new HalconDotNet.HTuple();
+            _ctxSlant = new HalconDotNet.HTuple();
+            _ctxSize = new HalconDotNet.HTuple();
+            _ctxFont = new HalconDotNet.HTuple();
+            _ctxCoordinateSystem = new HalconDotNet.HTuple();
+        }
+
+        /// <summary>
+        /// 信息条内容
+        /// </summary>
+        public string Context { set; get; }
+
+        private HalconDotNet.HTuple _defaultRow;
+        private HalconDotNet.HTuple _row;
+        /// <summary>
+        /// 信息条起始坐标行
+        /// </summary>
+        public HalconDotNet.HTuple Row
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _row = value;
+            }
+            get
+            {
+                if (_row.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _row;
+                else
+                    return _defaultRow;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCol;
+        private HalconDotNet.HTuple _col;
+        /// <summary>
+        /// 信息条起始坐标列
+        /// </summary>
+        public HalconDotNet.HTuple Col
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _col = value;
+            }
+            get
+            {
+                if (_col.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _col;
+                else
+                    return _defaultCol;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxColor;
+        private HalconDotNet.HTuple _ctxColor;
+        /// <summary>
+        /// 信息条字体颜色
+        /// </summary>
+        public HalconDotNet.HTuple CtxColor
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxColor = value;
+            }
+            get
+            {
+                if (_ctxColor.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxColor;
+                else
+                    return _defaultCtxColor;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxBold;
+        private HalconDotNet.HTuple _ctxBold;
+        /// <summary>
+        /// 是否加粗
+        /// 字符串['true','false']
+        /// </summary>
+        public HalconDotNet.HTuple CtxBold
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxBold = value;
+            }
+            get
+            {
+                if (_ctxBold.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxBold;
+                else
+                    return _defaultCtxBold;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxSlant;
+        private HalconDotNet.HTuple _ctxSlant;
+
+        /// <summary>
+        /// 是否倾斜
+        /// 字符串['true','false']
+        /// </summary>
+        public HalconDotNet.HTuple CtxSlant
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxSlant = value;
+            }
+            get
+            {
+                if (_ctxSlant.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxSlant;
+                else
+                    return _defaultCtxSlant;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxSize;
+        private HalconDotNet.HTuple _ctxSize;
+        /// <summary>
+        /// 信息条字体大小
+        /// </summary>
+        public HalconDotNet.HTuple CtxSize
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxSize = value;
+            }
+            get
+            {
+                if (_ctxSize.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxSize;
+                else
+                    return _defaultCtxSize;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxFont;
+        private HalconDotNet.HTuple _ctxFont;
+        /// <summary>
+        /// 信息条字体
+        /// 字符串['mono','sans','serif']
+        /// </summary>
+        public HalconDotNet.HTuple CtxFont
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxFont = value;
+            }
+            get
+            {
+                if (_ctxFont.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxFont;
+                else
+                    return _defaultCtxFont;
+            }
+        }
+
+        private HalconDotNet.HTuple _defaultCtxCoordinateSystem;
+        private HalconDotNet.HTuple _ctxCoordinateSystem;
+        /// <summary>
+        /// 信息条坐标系统
+        /// 字符串['image','windows']
+        /// </summary>
+        public HalconDotNet.HTuple CtxCoordinateSystem
+        {
+            set
+            {
+                if (value.TupleNotEqual(new HalconDotNet.HTuple()))
+                    _ctxCoordinateSystem = value;
+            }
+            get
+            {
+                if (_ctxCoordinateSystem.TupleNotEqual(new HalconDotNet.HTuple()))
+                    return _ctxCoordinateSystem;
+                else
+                    return _defaultCtxCoordinateSystem;
+            }
+        }
+    }
 }
